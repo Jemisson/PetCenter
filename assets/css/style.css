@@ -65,14 +65,27 @@ li{
   margin-left: 15%;
   width: 20%;
 }
+
+.section-title{
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px 0;
+}
 /* Definições da seção cards */
 .container{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* margin: 0 auto; */
+  padding: 20px 5%;
+  text-align: center;
+}
+#container-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px 5%;
 }
+
 .card{
   width: 30%;
   margin: 10px;
@@ -88,4 +101,37 @@ li{
 .card p{
   margin: 10px 0;
   color: #585858;
+}
+.container-side-dogs{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 5%;
+}
+
+.container-side-dogs img,
+.container-side-dogs div{
+  width: 50%;
+  text-align: left;
+}
+.container-side-dogs div:first-child{
+  text-align: right;
+}
+
+.container-side-dogs div h1{
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+.container-side-dogs div p{
+  color: #585858;
+  margin: 50px 0;
+  line-height: 1.8rem;
+}
+
+.container-side-dogs div a{
+  background-color: #56acc3;
+  padding: 10px 50px;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: bold;
 }
