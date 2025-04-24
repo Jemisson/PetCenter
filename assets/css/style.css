@@ -4,7 +4,7 @@
 }
 body{
   margin: 0;
-  width: 100%;
+  width: 100%; /*remover o display flex adicionar o margin 0 auto no header */
   font-family: Arial, Helvetica, sans-serif;
 }
 a{
@@ -21,6 +21,7 @@ header{
   flex-direction: row;
   align-items: center;
   padding: 10px 5%;
+  margin: 0 auto;
 }
 li{
   list-style: none;
@@ -29,57 +30,56 @@ li{
   margin: 5px 20px;
   padding: 5px 20px;
 }
+
 #banner{
   background-image: url('/assets/images/banner.png');
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  border-top: solid 1px #CCC;
   display: flex;
   align-items: center;
 }
-#banner-text{
-  margin-left:15%;
-  width: 20%;
-}
-#banner h1{
-  margin-bottom: 0;
-}
 #banner h1,
-#banner h1 span{
+#banner span{
   font-size: 2.2rem;
+  margin: 5px 0;
 }
-#banner h1 span{
+#banner span{
   display: block;
 }
-#banner-text p{
-  color: #777;
-  font-size: 1rem;
-  margin-top: 0;
-}
-.button{
-  background-color:  #56ACC3;
+#banner a{
+  background-color: #56acc3;
   padding: 10px 50px;
-  color: #fff;
   border-radius: 10px;
+  color: #FFF;
   font-weight: bold;
 }
-
-.container{
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+#banner p{
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 0;
 }
-#container-cards{
-  width: 100%;
+#banner-text{
+  margin-left: 15%;
+  width: 20%;
+}
+/* Definições da seção cards */
+.container{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  /* margin: 0 auto; */
+  padding: 20px 5%;
 }
 .card{
-  width: 33%;
+  width: 30%;
+  margin: 10px;
   padding: 10px;
+  /* border: solid 1px #CCC; */
   border-radius: 10px;
+  /* box-shadow: 0 0 10px #CCC; */
 }
 .card img{
   width: 100%;
@@ -88,51 +88,4 @@ li{
 .card p{
   margin: 10px 0;
   color: #585858;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.section-title{
-  margin-top: 3rem;
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-.section-title + p{
-  font-size: 1.2rem;
-  color: #777;
-  margin-top: 0;
-}
-.container-side-dogs{
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
-}
-.container-side-dogs img,
-.container-side-dogs div{
-  width: 50%;
-  margin-top: 2rem;
-}
-.container-side-dogs div h1{
-  font-size: 1.3rem;
-}
-.container-side-dogs div p{
-  color: #777;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-}
-#container-articles{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#container-articles article{
-  width: 30%;
-  border-radius: 10px;
-  margin-top: 5rem;
-}
-#container-articles article p{
-  color: #777;
-  text-align: left;
-}
-.article h1{
-  display: inline-block;
 }
